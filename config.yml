@@ -1,0 +1,22 @@
+broker:
+  adapter: "rabbit"
+  mechanism: "AMQPLAIN"
+  login: "queue"
+  password: "34176d83996e53eef4d011dfd8985f4c"
+  host: "api.seon.cloud"
+  port: 16013
+  virtual_host: "queue"
+channels:
+  "123":
+    queues:
+      - "MyFirstTestQueue"
+      - "MySecondTestQueue"
+    exchangers:
+      - name: "MyFirstTestExchanger"
+        type: "direct"
+      - name: "MySecondTestExchanger"
+routes:
+  - name: "MyTestRoute"
+    channel: "MyTestChannel"
+    queue: "MyFirstTestQueue"
+    exchanger: "MyFirstTestExchanger"

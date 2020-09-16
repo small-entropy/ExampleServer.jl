@@ -3,6 +3,10 @@ uuid = "775d25b6-8935-4359-baa0-0dc908b6ff81"
 authors = ["Dmitrii Shevelev"]
 version = "0.1.0"
 
+[deps]
+Immortal = "7e70e6b1-cd01-4477-bffb-6df788447f4e"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
 [compat]
 julia = "1"
 

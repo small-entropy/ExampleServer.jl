@@ -1,0 +1,16 @@
+{
+	"rabbit": {
+	  "mechanism": "AMQPLAIN",
+	  "login": "queue",
+	  "password": "34176d83996e53eef4d011dfd8985f4",
+	  "host": "api.seon.cloud",
+	  "port": 16013,
+	  "virtual_host": "queue"
+	},
+	"server": {
+	  "channel": {
+		"id": "MyTestChannel"
+		
+	  }
+	}
+}
